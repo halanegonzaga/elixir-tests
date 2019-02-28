@@ -1,7 +1,11 @@
-defmodule Test do
+defmodule TestControlStructures do
 
     @doc """
         Testando estrutura de controle case/2
+
+        ## Exemplo
+            iex> TestControlStructures.test_case({:ok})
+            "Okay"
     """
     def test_case(tupla) do
         
@@ -15,7 +19,14 @@ defmodule Test do
         end
 
     end
+    
+    @doc """
+        Testando estrutura de controle cond
 
+        ## Exemplo
+            iex> TestControlStructures.test_cond(1,2)
+            "Faz isso se for igual a 3"
+    """
     def test_cond(cond1, cond2) do
         
         # assossiar condições e não valores
@@ -29,5 +40,5 @@ defmodule Test do
         end
 
     end
-
+    
 end

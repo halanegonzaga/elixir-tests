@@ -1,8 +1,8 @@
 defmodule TestTest do
   use ExUnit.Case
-  doctest Test
+  doctest TestControlStructures
 
-  test "greets the world" do
-    assert Test.hello() == :world
-  end
+  # test "greets the world" do
+  #   assert Test.hello() == :world
+  # end
 end
