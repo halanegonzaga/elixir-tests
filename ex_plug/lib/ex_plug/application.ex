@@ -8,12 +8,12 @@ defmodule ExPlug.Application do
       {
         Plug.Cowboy,
         scheme: :http,
-        plug: ExPlug.HelloWorldPlug,
-        options: [port: 3001]
+        plug: ExPlug.Router,
+        options: [port: 80]
       }
     ]
 
-    Logger.info("Iniciando aplicação na porta")
+    Logger.info("Iniciando aplicação na porta 3001")
 
     opts = [strategy: :one_for_one, name: ExPlug.Supervisor]
     Supervisor.start_link(children, opts)
