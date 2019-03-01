@@ -8,7 +8,7 @@ defmodule TestPipe do
             ["É", "hora", "do", "show"]
     """
     def tokenize_string(string) do
-        string
+        string 
         |> String.split
     end
 
