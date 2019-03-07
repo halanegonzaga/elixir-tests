@@ -9,7 +9,7 @@ defmodule ExPlug.HelloWorldPlug do
     end
 
     @doc """
-        Função necessária para criação do plug
+        Função necessária para criação do
     """
     def call(conn, _opts) do
         conn
