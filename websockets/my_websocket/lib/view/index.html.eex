@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste de Aplicação</title>
+
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    
+        <!-- Lista de Mensagens -->
+        <div id="chat-msg"></div>
+        
+        <!-- Enviar Mensagem -->
+        <div id="chat-send">
+            <form method="POST" id="form">
+                <input id="message" type="text">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- JS -->
+        <script src="js/socket.js" type="text/javascript"></script>
+        <script>
+            //Iniciar aplicação
+            var ws = new SocketClient("<%= user  %>");
+            ws.init();
+        </script>
+    </body>
+</html>
